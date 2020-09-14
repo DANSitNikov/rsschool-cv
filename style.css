@@ -1,7 +1,114 @@
+body{
+    margin: 0;
+    background-color: #e0d6d6;
+}
 .wrapper{
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
 }
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+    color: white;
+    background-color: #343030;
+}
 h1{
-    color: red;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 800;
+}
+.main{
+    padding: 50px 50px 10px 50px;
+    background-color: orange;
+}
+.me{
+    display: flex;
+}
+.summary{
+    margin-left: 20px;
+}
+.skill-and-code{
+    display: flex;
+    margin-top: 20px;
+    padding-top: 20px;
+    justify-content: space-around;
+    border-top: 5px solid black;
+}
+.code-examples ul li a{
+    color: black;
+}
+.code-examples ul li a:hover{
+    color: #28288c;
+}
+.experience-and-education{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 5px solid black;
+}
+.english-lvl{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 5px solid black;
+}
+.footer{
+    padding: 30px 50px 0 50px;
+    color: white;
+    background-color: #666060;
+}
+.footer h3{
+    text-align: center;
+}
+.contacts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contacts ul li {
+    list-style-type: none;
+}
+h3{
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+p, li{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+ul{
+    padding: 0;
+}
+.facebook{
+    width: 30px;
+    height: auto;
+    transition-duration: 0.5s;
+}
+.facebook:hover{
+    transition-duration: 0.5s;
+    fill: #070773;
+}
+.vk{
+    width: 30px;
+    height: auto;
+    transition-duration: 0.5s;
+}
+.vk:hover{
+    transition-duration: 0.5s;
+    fill: #0606ee;
+}
+.code-examples ul li a{
+    position: relative;
+}
+.code-examples ul li a:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    width: 110px;
 }
